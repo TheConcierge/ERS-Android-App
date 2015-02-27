@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Egyptian Rat Screw</string>
+    <string name="action_settings">Settings</string>
+    <color name="green">#006400</color>
+    <string name="hello_world">Hello world!</string>
+    
+
+</resources>

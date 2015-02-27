@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/green"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/Play1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Play2"
+        android:layout_alignParentBottom="true"
+        android:text="Play" />
+
+    <Button
+        android:id="@+id/Play2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Deck2"
+        android:layout_alignParentLeft="true"
+        android:text="Play" />
+
+    <EditText
+        android:id="@+id/twoNameIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/oneNameIn"
+        android:layout_below="@+id/oneNameIn"
+        android:ems="10"
+        android:text="Player 2 Name" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/Slap2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Deck2"
+        android:layout_alignParentRight="true"
+        android:text="Slap" />
+
+    <ImageView
+        android:id="@+id/Deck2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Played"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:src="@drawable/b2fv" />
+
+    <ImageView
+        android:id="@+id/Played"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/UserDeck"
+        android:layout_alignLeft="@+id/Deck2"
+        android:layout_marginBottom="21dp"
+        android:src="@drawable/ec" />
+
+    <Button
+        android:id="@+id/Slap1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Slap" />
+
+    <Button
+        android:id="@+id/Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/twoNameIn"
+        android:layout_alignParentRight="true"
+        android:text="Start" />
+
+    <TextView
+        android:id="@+id/oneNumCards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/UserDeck"
+        android:layout_marginTop="19dp"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/twoNumCards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Deck2"
+        android:layout_alignParentRight="true"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/twoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/twoNumCards"
+        android:layout_alignBottom="@+id/twoNumCards"
+        android:layout_alignParentLeft="true"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/oneName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/oneNumCards"
+        android:layout_alignBottom="@+id/oneNumCards"
+        android:layout_alignParentLeft="true"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/UserDeck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Play1"
+        android:layout_alignLeft="@+id/Played"
+        android:src="@drawable/b2fv" />
+
+    <ToggleButton
+        android:id="@+id/marriageToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/oneNameIn"
+        android:layout_alignParentTop="true"
+        android:text="Marriage" />
+
+    <ToggleButton
+        android:id="@+id/topBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/oneNameIn"
+        android:layout_alignParentRight="true"
+        android:text="Top Bottom" />
+
+    <EditText
+        android:id="@+id/oneNameIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/marriageToggle"
+        android:layout_marginTop="42dp"
+        android:layout_toLeftOf="@+id/twoNumCards"
+        android:ems="10"
+        android:text="Player 1 Name" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/marriageToggle"
+        android:layout_below="@+id/marriageToggle"
+        android:text="Marriage Rule"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:text="Top Bottom Rule"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>
